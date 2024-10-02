@@ -7,6 +7,8 @@ app = Flask(__name__)
 tasks = []
 task_id_control = 1
 
+
+# App Routes
 @app.route("/tasks", methods=["POST"])
 def create_task():
     global task_id_control
